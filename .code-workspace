@@ -1,0 +1,36 @@
+{
+    "folders": [
+      {
+        "path": "src"
+      },
+      {
+        "path": "lib"
+      },
+      {
+        "path": "include"
+      },
+      {
+        "path": ".vscode"
+      }
+    ],
+    "settings": {
+      "editor.tabSize": 4,
+      "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true
+      },
+      "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/lib"
+      ],
+      "C_Cpp.default.intelliSenseMode": "gcc-x64",
+      "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+      "C_Cpp.default.cppStandard": "c++17"
+    },
+    "extensions": {
+      "recommendations": [
+        "ms-vscode.cpptools",
+        "tamaskenez.debugger-for-raylib"
+      ]
+    }
+  }
