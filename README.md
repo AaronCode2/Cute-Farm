@@ -1,5 +1,11 @@
 # Cute-Farm
 
+Important:
+
+<p>This is a Raylib C++ Non-commerical Project due to the Assets argreement by <a>CupNoodle</a></p>
+<p>You can use this for anything with the Cup Noodle Agreement</p><br>
+
+
 To Complie Project:
 <p>To complie project <code>cd src</code> and <code>make</code> in terminal, you will need to install a gcc complier and make</p>
 
