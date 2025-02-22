@@ -47,5 +47,5 @@ class Tile {
         const float size = 0; 
 
         void draw();
-        int getImageID();
+        int getTileID();
 };

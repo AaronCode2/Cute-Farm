@@ -23,7 +23,7 @@ class Player : public Entity {
 
         Texture2D actionImage = LoadTexture("../Assets/Player/PlayerActions.png");
 
-        Player(Rectangle destRect, int speed, int frameX, int frameY);
+        Player(Rectangle destRect);
         ~Player();
 
         Actions getActionState() { return actions; };
@@ -40,6 +40,8 @@ class Player : public Entity {
         void manageHitBox();
 
         bool idle = true;
+
+        int speed = 6;
 
         Rectangle hitBox;
         Actions actions = None;

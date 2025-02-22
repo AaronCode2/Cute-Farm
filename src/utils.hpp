@@ -8,14 +8,10 @@
 
 namespace utils {
     
-    void processCollision(
-        Rectangle &othertile, 
-        const Rectangle prevRect, 
-        const Rectangle player, int speed
-    );
+    void processCollision(Rectangle &othertile, const Rectangle prevRect, const Rectangle player, const int speed);
 
-    bool mouseHover(Rectangle dest);
-    bool mouseClicked(Rectangle dest);
+    bool mouseHover(const Rectangle dest);
+    bool mouseClicked(const Rectangle dest);
 
     bool harvastingStatus(Player &player, Tile &tile, const Rectangle tileSelRect);
     bool plantDirtStatus(Player &player, Tile &tile, const Rectangle tileSelRect);

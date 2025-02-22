@@ -1,11 +1,6 @@
 #include "utils.hpp"
 
-void utils::processCollision(
-    Rectangle &othertile, 
-    const Rectangle prevRect, 
-    const Rectangle player, int speed
-) 
-{
+void utils::processCollision(Rectangle &othertile, const Rectangle prevRect, const Rectangle player, const int speed) {
 
     if(
         prevRect.y + prevRect.height <= player.y 
@@ -32,12 +27,12 @@ void utils::processCollision(
     }
 }
 
-bool utils::mouseHover(Rectangle dest) {
+bool utils::mouseHover(const Rectangle dest) {
 
     return CheckCollisionPointRec(GetMousePosition(), dest);
 }
 
-bool utils::mouseClicked(Rectangle dest) {
+bool utils::mouseClicked(const Rectangle dest) {
 
     return (CheckCollisionPointRec(GetMousePosition(), dest) && IsMouseButtonDown(MOUSE_BUTTON_LEFT));
 }

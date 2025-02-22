@@ -1,8 +1,8 @@
 #include "player.hpp"
 
-Player::Player(Rectangle destRect, int speed, int frameX, int frameY): 
+Player::Player(Rectangle destRect): 
 Entity(
-    destRect, frameX, frameY, 
+    destRect, 4, 4, 
     "../Assets/Player/PlayerWalking.png"
 ) {}
 

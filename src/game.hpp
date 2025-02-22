@@ -30,14 +30,12 @@ class Game {
         Texture mouse = LoadTexture("../Assets/Player/Mouse.png");
         Image icon = LoadImage("../Assets/Objects/Egg.png");
 
-        Player player = Player(
-            {
+        Player player = Player({
+            
                 (float) (GetScreenWidth() / 2) - 50, 
                 (float) (GetScreenHeight() / 2) - 50, 
                 100, 100
-            }, 
-            6, 4, 4
-        );
+            });
 
         void runGame();
         void updateGame();

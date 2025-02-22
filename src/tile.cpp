@@ -20,10 +20,10 @@ Tile::Tile(Rectangle destRect, Tiletype tiletype, int frameX, int frameY) {
         case Dirt:
 
             srcRect = {
-                (float) (image[getImageID()].width / 11) * frameX, 
-                (float) (image[getImageID()].height / 7) * frameY,
-                (float) image[getImageID()].width / 11,
-                (float) image[getImageID()].height / 7 
+                (float) (image[getTileID()].width / 11) * frameX, 
+                (float) (image[getTileID()].height / 7) * frameY,
+                (float) image[getTileID()].width / 11,
+                (float) image[getTileID()].height / 7 
             };
 
             break;
@@ -32,10 +32,10 @@ Tile::Tile(Rectangle destRect, Tiletype tiletype, int frameX, int frameY) {
         case TreeTop:
 
             srcRect = {
-                (float) (image[getImageID()].width / 9) * frameX, 
-                (float) (image[getImageID()].height / 5) * frameY,
-                (float) image[getImageID()].width / 9,
-                (float) image[getImageID()].height / 5 
+                (float) (image[getTileID()].width / 9) * frameX, 
+                (float) (image[getTileID()].height / 5) * frameY,
+                (float) image[getTileID()].width / 9,
+                (float) image[getTileID()].height / 5 
             };
             
             break;
@@ -43,10 +43,10 @@ Tile::Tile(Rectangle destRect, Tiletype tiletype, int frameX, int frameY) {
         case ColDecoration:
 
             srcRect = {
-                (float) (image[getImageID()].width / 9) * frameX, 
-                (float) (image[getImageID()].height / 5) * frameY,
-                (float) image[getImageID()].width / 9,
-                (float) (image[getImageID()].height / 5) 
+                (float) (image[getTileID()].width / 9) * frameX, 
+                (float) (image[getTileID()].height / 5) * frameY,
+                (float) image[getTileID()].width / 9,
+                (float) (image[getTileID()].height / 5) 
             };
 
             // Don't tell me why this is here as it just works!
@@ -88,7 +88,7 @@ void Tile::drawAdditionals() {
         };
 
         DrawTexturePro(
-            image[getImageID()],
+            image[getTileID()],
             srcRect2, destRect2,
             {0, 0}, 0,
             WHITE
@@ -126,7 +126,7 @@ void Tile::draw() {
     if(tiletype != ColDecoration) {
 
         DrawTexturePro(
-            image[getImageID()], 
+            image[getTileID()], 
             srcRect, destRect,
             {0, 0}, 0, WHITE
         );
@@ -137,7 +137,7 @@ void Tile::draw() {
         destRect.height = 25;
 
         DrawTexturePro(
-            image[getImageID()], 
+            image[getTileID()], 
             srcRect, destRect,
             {0, 0}, 0, WHITE
         );
@@ -146,7 +146,7 @@ void Tile::draw() {
 
 }
 
-int Tile::getImageID() {
+int Tile::getTileID() {
 
     switch(tiletype) {
 
