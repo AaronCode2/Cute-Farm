@@ -14,7 +14,7 @@
 ##  Don't have a compiler? 
 
 Go the Releases and should see something called Cute Farm, <br>
-click on it and scroll down and press on **Cute.Farm.Release.zip** and then extract it!
+click on it and scroll down and press on **Cute-Farm-Release.zip** and then extract it!
 
 #   How To Play
 
