@@ -11,9 +11,16 @@
 
         cmake --build build
 
+##  Don't have a compiler? 
+
+    Go the Releases and should see something called Cute Farm, <br>
+    click on it and scroll down and press on **Cute.Farm.Release.zip**
+
 #   How To Play
 
+- Click on the start button
 - Use WASD or Arrow keys to move
-- To Jump use the W, Up Arrow or even the Space Bar
-- Try to reach the Sign and Hopeful not fall due to Gravity
-- Most Important: Have Fun! 🎮😊
+- Go to a spot and press **1** to dig dirt
+- Then select a plant by going on the top left and choose the plant you want
+- Press **1** again on that dirt tile and a plant should appear
+- 
