@@ -23,4 +23,6 @@ click on it and scroll down and press on **Cute.Farm.Release.zip** and then extr
 - Go to a spot and press **1** to dig dirt
 - Then select a plant by going on the top left and choose the plant you want
 - Press **1** again on that dirt tile and a plant should appear
-- 
+- As it grows ripe, harvest it by pressing **2** you should notice that you are getting richer
+- Once ready, press **E** and it should pop up a Dealer's Menu
+- Select one of the options and fingers crossed you didn't get scammed!
