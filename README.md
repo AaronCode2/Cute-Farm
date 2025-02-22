@@ -1,4 +1,4 @@
-#  How To Complie
+#  How To Compile
 
 ###  Hopefully you have a **C++ Compiler**, **CMake** and **VsCode** installed to work.
 
