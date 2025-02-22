@@ -11,7 +11,7 @@
 
         cmake --build build
 
-#        How To Play
+#   How To Play
 
 - Use WASD or Arrow keys to move
 - To Jump use the W, Up Arrow or even the Space Bar
