@@ -1,6 +1,6 @@
-void game(); 
+#include "play.hpp"
 
 int main() {
 
-    game();
+    playGame();
 }

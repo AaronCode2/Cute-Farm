@@ -27,7 +27,7 @@ SOURCE_FILES
     src/TileManger.cpp 
     src/utils.cpp 
     src/tile.cpp
-    src/file.cpp
+    src/play.cpp
 )
 
 add_executable(Game ${SOURCE_FILES})

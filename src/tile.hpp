@@ -40,11 +40,8 @@ class Tile {
             (float) GetScreenHeight()
         };
 
-
         Tiletype tiletype;
         Rectangle srcRect;
-
-        const float size = 0; 
 
         void draw();
         int getTileID();
