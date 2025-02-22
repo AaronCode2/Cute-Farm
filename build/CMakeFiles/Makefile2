@@ -163,8 +163,8 @@ _deps/raylib-build/raylib/external/glfw/src/clean: _deps/raylib-build/raylib/ext
 # Target rules for target CMakeFiles/Aaron.dir
 
 # All Build rule for target.
-CMakeFiles/Aaron.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/Aaron.dir/all: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
+CMakeFiles/Aaron.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aaron.dir\build.make CMakeFiles/Aaron.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aaron.dir\build.make CMakeFiles/Aaron.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Aaron\Desktop\VS Code Files\Raylib C++\Cute Farm\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target Aaron"

@@ -7,7 +7,7 @@ GUI::GUI() {
 
     images[0] = LoadTexture("../Assets/Objects/Plants.png");
     images[1] = LoadTexture("../Assets/Objects/Coin.png");
-    images[2] = LoadTexture("Assets/Objects/SpeechBox.png");
+    images[2] = LoadTexture("../Assets/Objects/SpeechBox.png");
 
     otherImages[0] = LoadTexture("../Assets/Objects/DailogBox.png");
     otherImages[1] = LoadTexture("../Assets/Objects/Emoji.png");

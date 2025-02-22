@@ -41,7 +41,7 @@ void TileManger::createTile() {
         
     loadTexture();
 
-    std::ifstream file("TileMap.txt");
+    std::ifstream file("../src/TileMap.txt");
 
     if(!file.is_open()) std::cerr << "Failed To Open File\n";
 
