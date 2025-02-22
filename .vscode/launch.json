@@ -1,0 +1,30 @@
+{
+"configurations": [
+    {
+        "name": "Program",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/Aaron.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "preLaunchTask": "Cmake",
+        "cwd": "${workspaceFolder}/build",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+        "setupCommands": [
+            {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            {
+                "description": "Set Disassembly Flavor to Intel",
+                "text": "-gdb-set disassembly-flavor intel",
+                "ignoreFailures": true
+            }
+        ]
+    }
+]
+}

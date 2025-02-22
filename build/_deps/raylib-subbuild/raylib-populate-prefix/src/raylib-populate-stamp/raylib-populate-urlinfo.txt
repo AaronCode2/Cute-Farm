@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/cmake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/download-raylib-populate.cmake;COMMAND;C:/cmake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/verify-raylib-populate.cmake;COMMAND;C:/cmake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/extract-raylib-populate.cmake
+source_dir=C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-src
+work_dir=C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps
+url(s)=https://github.com/raysan5/raylib/archive/refs/tags/4.2.0.tar.gz
+hash=
+      no_extract=
+

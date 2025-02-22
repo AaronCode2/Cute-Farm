@@ -1,0 +1,3 @@
+C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate.dir
+C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-subbuild/CMakeFiles/rebuild_cache.dir

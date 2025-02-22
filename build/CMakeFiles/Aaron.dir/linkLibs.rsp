@@ -1,0 +1,1 @@
+ "_deps/raylib-build/raylib/libraylib.a" -lopengl32 -lglu32 -lwinmm "_deps/raylib-build/raylib/external/glfw/src/libglfw3.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
