@@ -396,8 +396,9 @@ void GUI::getResourcesForPlayer(
         } else {
 
             DrawText("SCAMMED!", (GetScreenWidth() / 2) - 100, 0, 100, RED);
+            std::cout << "Scammed\n";
 
-            coins -= moneyToTake + percentScam;
+            coins -= moneyToTake;
             tomatoSeeds += 1;
             wheatSeeds += 2;
         }
