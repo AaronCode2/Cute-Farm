@@ -62,6 +62,7 @@ void GUI::update() {
         (float) images[0].width / 6,
         (float) images[0].height / 2
     };
+
     destRect[0] = {
         120, 8,
         40, 40
@@ -69,17 +70,18 @@ void GUI::update() {
 
     srcRect[1] = srcRect[0];
     srcRect[1].y = srcRect[1].height;
+
     destRect[1] = {
         200, 8,
         40 ,40
     };
-
 
     srcRect[2] = {
         0, 0,
         (float) images[1].width / 12,
         (float) images[1].height
     };
+
     destRect[2] = {
         10, 10,
         40, 40
@@ -90,6 +92,7 @@ void GUI::update() {
         (float) images[2].width,
         (float) images[2].height
     };
+    
     destRect[3] = {
         0, -10,
         300, 80
