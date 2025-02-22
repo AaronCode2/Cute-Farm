@@ -46,15 +46,12 @@ bool Game::titleScreen() {
         100
     };
 
-    if(gui.mouseHover(dest)) src.x = src.width;
+    if(utils::mouseHover(dest)) src.x = src.width;
 
 
 
-    if(gui.mouseClicked(dest)) {
-
-        std::this_thread::sleep_for(std::chrono::microseconds(1000));
-        run = true;
-    }
+    if(utils::mouseClicked(dest)) run = true;
+    
     
     if(!run) {
 

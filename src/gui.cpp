@@ -44,16 +44,16 @@ void GUI::update() {
 
     } else draw();
 
-    if(mouseClicked(destRect[0])) 
+    if(utils::mouseClicked(destRect[0])) 
         selectedPlant = Wheat;
-    else if(mouseClicked(destRect[1]))
+    else if(utils::mouseClicked(destRect[1]))
         selectedPlant = Tomato;
 
-    if(mouseHover(destRect[0]))
+    if(utils::mouseHover(destRect[0]))
         WheatColor = {255, 255, 255, 150};
     else WheatColor = WHITE;
 
-    if(mouseHover(destRect[1])) 
+    if(utils::mouseHover(destRect[1])) 
         TomatoColor = {255, 255, 255, 150};
     else TomatoColor = WHITE;
 
@@ -115,25 +115,6 @@ void GUI::update() {
         (float) otherImages[0].width,
         (float) otherImages[0].height
     };
-}
-
-bool GUI::mouseClicked(Rectangle rect) {
-
-    if(
-        CheckCollisionPointRec(GetMousePosition(), rect) 
-        && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)
-    ) return true;
-    
-
-    return false;
-}
-
-bool GUI::mouseHover(Rectangle rect) {
-
-    if(CheckCollisionPointRec(GetMousePosition(), rect)) 
-        return true;
-
-    return false;
 }
 
 std::string GUI::formatZeros(int num, int width) {
@@ -198,17 +179,16 @@ void GUI::drawSellings() {
 
     DrawText("Dealers:", 170, 90, 40, BLACK);
 
-
         DrawTexturePro(
             otherImages[0],
             otherSrcRect[0], {150, 125, 700, 150},
             {0, 0}, 0, DealerBackground1
         );
 
-        if(mouseHover({150, 125, 700, 150})) DealerBackground1.a = 200;
+        if(utils::mouseHover({150, 125, 700, 150})) DealerBackground1.a = 200;
         else DealerBackground1 = WHITE;
 
-        if(mouseClicked({150, 125, 700, 150})) {
+        if(utils::mouseClicked({150, 125, 700, 150})) {
 
             getResourcesForPlayer(
                 money1, randWheat1, 
@@ -222,10 +202,10 @@ void GUI::drawSellings() {
             {0, 0}, 0, DealerBackground2
         );
 
-        if(mouseHover({150, 125 * 2, 700, 150})) DealerBackground2.a = 200;
+        if(utils::mouseHover({150, 125 * 2, 700, 150})) DealerBackground2.a = 200;
         else DealerBackground2 = WHITE;
 
-        if(mouseClicked({150, 125 * 2, 700, 150})) {
+        if(utils::mouseClicked({150, 125 * 2, 700, 150})) {
 
             getResourcesForPlayer(
                 money2, randWheat2, 
@@ -239,10 +219,10 @@ void GUI::drawSellings() {
             {0, 0}, 0, DealerBackground3
         );
 
-        if(mouseHover({150, 125 * 3, 700, 150})) DealerBackground3.a = 200;
+        if(utils::mouseHover({150, 125 * 3, 700, 150})) DealerBackground3.a = 200;
         else DealerBackground3 = WHITE;
 
-        if(mouseClicked({150, 125 * 3, 700, 150})) {
+        if(utils::mouseClicked({150, 125 * 3, 700, 150})) {
 
             getResourcesForPlayer(
                 money3, randWheat3, 

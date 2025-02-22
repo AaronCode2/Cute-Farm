@@ -1,6 +1,7 @@
 #pragma once
 #include <raylib.h>
 #include "plants.hpp"
+#include "utils.hpp"
 
 class GUI {
 
@@ -9,9 +10,6 @@ class GUI {
         GUI();
 
         void update();
-
-        bool mouseClicked(Rectangle rect);
-        bool mouseHover(Rectangle rect);
 
         PlantType selectedPlant = Wheat;
 

@@ -2,8 +2,8 @@
 
 void utils::processCollision(
     Rectangle &othertile, 
-    Rectangle prevRect, 
-    Rectangle player, int speed
+    const Rectangle prevRect, 
+    const Rectangle player, int speed
 ) 
 {
 
@@ -32,8 +32,18 @@ void utils::processCollision(
     }
 }
 
-bool utils::harvastingStatus(Player &player, Tile &tile, Rectangle tileSelRect) {
-    
+bool utils::mouseHover(Rectangle dest) {
+
+    return CheckCollisionPointRec(GetMousePosition(), dest);
+}
+
+bool utils::mouseClicked(Rectangle dest) {
+
+    return (CheckCollisionPointRec(GetMousePosition(), dest) && IsMouseButtonDown(MOUSE_BUTTON_LEFT));
+}
+
+bool utils::harvastingStatus(Player &player, Tile &tile, const Rectangle tileSelRect) {
+
     if(
         player.getActionState() == Harvasting &&
         tile.getType() == Dirt &&
@@ -67,7 +77,7 @@ bool utils::plantableStatus(
     return false;
 }
 
-bool utils::plantDirtStatus(Player &player, Tile &tile, Rectangle tileSelRect) {
+bool utils::plantDirtStatus(Player &player, Tile &tile, const Rectangle tileSelRect) {
 
     if(
         player.getActionState() == Digging &&
