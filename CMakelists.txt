@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 
-project(Aaron)
+project(Game)
 
 include(FetchContent)
 
@@ -8,7 +8,7 @@ set(RAYLIB_VERSION 4.2.0)
 
 FetchContent_Declare(
     raylib
-    URL https://github.com/raysan5/raylib/archive/refs/tags/${RAYLIB_VERSION}.tar.gz
+    URL https://github.com/raysan5/raylib/archive/refs/tags/4.2.0.tar.gz
     FIND_PACKAGE_ARGS ${RAYLIB_VERSION} EXACT
 )
 
@@ -30,5 +30,5 @@ SOURCE_FILES
     src/file.cpp
 )
 
-add_executable(Aaron ${SOURCE_FILES})
-target_link_libraries(Aaron raylib)
+add_executable(Game ${SOURCE_FILES})
+target_link_libraries(Game raylib)
