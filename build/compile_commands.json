@@ -54,6 +54,12 @@
   "output": "CMakeFiles/Aaron.dir/src/tile.cpp.obj"
 },
 {
+  "directory": "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles/Aaron.dir/includes_CXX.rsp -g -o CMakeFiles\\Aaron.dir\\src\\file.cpp.obj -c \"C:\\Users\\Aaron\\Desktop\\VS Code Files\\Raylib C++\\Cute Farm\\src\\file.cpp\"",
+  "file": "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/file.cpp",
+  "output": "CMakeFiles/Aaron.dir/src/file.cpp.obj"
+},
+{
   "directory": "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-build/raylib",
   "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS @CMakeFiles/raylib.dir/includes_C.rsp -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99 -o CMakeFiles\\raylib.dir\\rcore.c.obj -c \"C:\\Users\\Aaron\\Desktop\\VS Code Files\\Raylib C++\\Cute Farm\\build\\_deps\\raylib-src\\src\\rcore.c\"",
   "file": "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/build/_deps/raylib-src/src/rcore.c",

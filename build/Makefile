@@ -267,6 +267,30 @@ src/entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aaron.dir\build.make CMakeFiles/Aaron.dir/src/entity.cpp.s
 .PHONY : src/entity.cpp.s
 
+src/file.obj: src/file.cpp.obj
+.PHONY : src/file.obj
+
+# target to build an object file
+src/file.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aaron.dir\build.make CMakeFiles/Aaron.dir/src/file.cpp.obj
+.PHONY : src/file.cpp.obj
+
+src/file.i: src/file.cpp.i
+.PHONY : src/file.i
+
+# target to preprocess a source file
+src/file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aaron.dir\build.make CMakeFiles/Aaron.dir/src/file.cpp.i
+.PHONY : src/file.cpp.i
+
+src/file.s: src/file.cpp.s
+.PHONY : src/file.s
+
+# target to generate assembly for a file
+src/file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Aaron.dir\build.make CMakeFiles/Aaron.dir/src/file.cpp.s
+.PHONY : src/file.cpp.s
+
 src/game.obj: src/game.cpp.obj
 .PHONY : src/game.obj
 
@@ -458,6 +482,9 @@ help:
 	@echo ... src/entity.obj
 	@echo ... src/entity.i
 	@echo ... src/entity.s
+	@echo ... src/file.obj
+	@echo ... src/file.i
+	@echo ... src/file.s
 	@echo ... src/game.obj
 	@echo ... src/game.i
 	@echo ... src/game.s

@@ -3,7 +3,7 @@
 Player::Player(Rectangle destRect, int speed, int frameX, int frameY): 
 Entity(
     destRect, frameX, frameY, 
-    "Assets/Player/PlayerWalking.png"
+    "../Assets/Player/PlayerWalking.png"
 ) {}
 
 Player::~Player() {

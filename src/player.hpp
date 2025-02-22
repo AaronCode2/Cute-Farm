@@ -21,7 +21,7 @@ class Player : public Entity {
 
     public:
 
-        Texture2D actionImage = LoadTexture("Assets/Player/PlayerActions.png");
+        Texture2D actionImage = LoadTexture("../Assets/Player/PlayerActions.png");
 
         Player(Rectangle destRect, int speed, int frameX, int frameY);
         ~Player();

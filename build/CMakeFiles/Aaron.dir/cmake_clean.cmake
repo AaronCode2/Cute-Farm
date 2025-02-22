@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Aaron.dir/src/TileManger.cpp.obj.d"
   "CMakeFiles/Aaron.dir/src/entity.cpp.obj"
   "CMakeFiles/Aaron.dir/src/entity.cpp.obj.d"
+  "CMakeFiles/Aaron.dir/src/file.cpp.obj"
+  "CMakeFiles/Aaron.dir/src/file.cpp.obj.d"
   "CMakeFiles/Aaron.dir/src/game.cpp.obj"
   "CMakeFiles/Aaron.dir/src/game.cpp.obj.d"
   "CMakeFiles/Aaron.dir/src/gui.cpp.obj"

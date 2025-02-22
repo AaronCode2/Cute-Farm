@@ -27,6 +27,7 @@ SOURCE_FILES
     src/TileManger.cpp 
     src/utils.cpp 
     src/tile.cpp
+    src/file.cpp
 )
 
 add_executable(Aaron ${SOURCE_FILES})

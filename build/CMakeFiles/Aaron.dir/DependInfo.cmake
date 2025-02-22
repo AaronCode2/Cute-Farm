@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/TileManger.cpp" "CMakeFiles/Aaron.dir/src/TileManger.cpp.obj" "gcc" "CMakeFiles/Aaron.dir/src/TileManger.cpp.obj.d"
   "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/entity.cpp" "CMakeFiles/Aaron.dir/src/entity.cpp.obj" "gcc" "CMakeFiles/Aaron.dir/src/entity.cpp.obj.d"
+  "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/file.cpp" "CMakeFiles/Aaron.dir/src/file.cpp.obj" "gcc" "CMakeFiles/Aaron.dir/src/file.cpp.obj.d"
   "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/game.cpp" "CMakeFiles/Aaron.dir/src/game.cpp.obj" "gcc" "CMakeFiles/Aaron.dir/src/game.cpp.obj.d"
   "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/gui.cpp" "CMakeFiles/Aaron.dir/src/gui.cpp.obj" "gcc" "CMakeFiles/Aaron.dir/src/gui.cpp.obj.d"
   "C:/Users/Aaron/Desktop/VS Code Files/Raylib C++/Cute Farm/src/main.cpp" "CMakeFiles/Aaron.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Aaron.dir/src/main.cpp.obj.d"

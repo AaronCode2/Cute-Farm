@@ -5,12 +5,12 @@
 void TileManger::loadTexture() {
 
 
-    Plant::image = LoadTexture("Assets/Objects/Plants.png");
+    Plant::image = LoadTexture("../Assets/Objects/Plants.png");
 
-    Tile::image[0] = LoadTexture("Assets/Tilesets/Grass.png");
-    Tile::image[1] = LoadTexture("Assets/Tilesets/Hills.png");
-    Tile::image[2] = LoadTexture("Assets/Objects/Decoration.png");
-    Tile::image[3] = LoadTexture("Assets/Tilesets/Dirt.png");
+    Tile::image[0] = LoadTexture("../Assets/Tilesets/Grass.png");
+    Tile::image[1] = LoadTexture("../Assets/Tilesets/Hills.png");
+    Tile::image[2] = LoadTexture("../Assets/Objects/Decoration.png");
+    Tile::image[3] = LoadTexture("../Assets/Tilesets/Dirt.png");
     
 }
 

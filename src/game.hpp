@@ -27,8 +27,8 @@ class Game {
         float time = 0.0f;
 
         Texture2D playBtn = LoadTexture("../Assets/Objects/Play.png");
-        Texture mouse = LoadTexture("Assets/Player/Mouse.png");
-        Image icon = LoadImage("Assets/Objects/Egg.png");
+        Texture mouse = LoadTexture("../Assets/Player/Mouse.png");
+        Image icon = LoadImage("../Assets/Objects/Egg.png");
 
         Player player = Player(
             {
