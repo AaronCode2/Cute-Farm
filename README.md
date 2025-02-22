@@ -18,7 +18,7 @@ click on it and scroll down and press on **Cute.Farm.Release.zip** and then extr
 
 #   How To Play
 
-- Click on the start button
+- Click on the start button (if you want to return to the screen title press **Q**)
 - Use WASD or Arrow keys to move
 - Go to a spot and press **1** to dig dirt
 - Then select a plant by going on the top left and choose the plant you want
@@ -26,3 +26,5 @@ click on it and scroll down and press on **Cute.Farm.Release.zip** and then extr
 - As it grows ripe, harvest it by pressing **2** you should notice that you are getting richer
 - Once ready, press **E** and it should pop up a Dealer's Menu
 - Select one of the options and fingers crossed you didn't get scammed!
+- Press **E** again to close the menu
+- Most important have fun!
