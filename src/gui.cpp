@@ -170,7 +170,7 @@ void GUI::drawSellings() {
 
     std::string dealers[] = {
         "Harry", "Joe", "Aaron", 
-        "Jack", "Charlie", "Anne", 
+        "Cherno", "Charlie", "Anne", 
         "Freya", "Isla", "Molly"
     };
 
