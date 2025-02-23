@@ -112,6 +112,8 @@ void Game::manageHarvasting(Tile &tile) {
                 if(plant.getType() == Wheat) gui.coins += 56;
                 else gui.coins += 78;
 
+                // No worries!
+
                 plant.destRect.x = 0xfffff;
             }
         }
