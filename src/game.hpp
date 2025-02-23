@@ -20,10 +20,11 @@ class Game {
     private:
 
         Rectangle prevRect = {0, 0, 0, 0};
+        Rectangle dest = {340, 280, 300, 100};
 
         Rectangle src;
 
-        bool run = false;
+        bool runTitleScreen = false;
         float time = 0.0f;
 
         Texture2D playBtn = LoadTexture("../Assets/Objects/Play.png");

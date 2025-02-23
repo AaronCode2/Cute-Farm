@@ -29,7 +29,6 @@ bool Game::titleScreen() {
     time += GetFrameTime();
     float yOffset = sin(time * 2.0f) * 20.0f;
 
-
     src = {
 
         0, 
@@ -38,19 +37,11 @@ bool Game::titleScreen() {
         (float) playBtn.height / 2
     };
 
-    Rectangle dest = {
-
-        340, 
-        280,
-        300,
-        100
-    };
-
     if(utils::mouseHover(dest)) src.x = src.width;
 
-    if(utils::mouseClicked(dest)) run = true;   
+    if(utils::mouseClicked(dest)) runTitleScreen = true;   
     
-    if(!run) {
+    if(!runTitleScreen) {
 
         DrawText("Cute Farm", 290, 100 + yOffset, 80, PINK);
 
@@ -61,7 +52,7 @@ bool Game::titleScreen() {
         );
     }
 
-    return run;
+    return runTitleScreen;
 }
 
 void Game::checkInput() {
@@ -217,7 +208,7 @@ void Game::runGame() {
             updateGame();
         }
 
-        if(IsKeyDown(KEY_Q)) run = false;
+        if(IsKeyDown(KEY_Q)) runTitleScreen = false;
 
         DrawTextureEx(mouse, GetMousePosition(), 0, 2.0f, WHITE);
         HideCursor();
