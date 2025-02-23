@@ -154,6 +154,7 @@ void Game::managePlants() {
                 ));
 
                 gui.tomatoSeeds--;
+                break;
             } else if(gui.wheatSeeds > 0 && gui.selectedPlant == Wheat) {
 
                 tempPlant.push_back(Plant(
@@ -166,6 +167,7 @@ void Game::managePlants() {
                 ));
 
                 gui.wheatSeeds--;
+                break;
             }
         }
     }
