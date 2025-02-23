@@ -1,3 +1,5 @@
+#include <raylib.h>
+#include "game.hpp"
 
 void playGame() {
 

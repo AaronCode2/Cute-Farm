@@ -1,5 +1,4 @@
-#include <raylib.h>
-#include "game.hpp"
+#pragma once
 #include "utils.hpp"
 
 void playGame();
