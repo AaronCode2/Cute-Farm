@@ -1,0 +1,32 @@
+#include <windows.h>
+IDI_ICON1 ICON "favicon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     1,0,0,0
+ PRODUCTVERSION  1,0,0,0
+ FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+ FILEFLAGS       0
+ FILEOS          VOS__WINDOWS32
+ FILETYPE        VFT_APP
+ FILESUBTYPE     0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",      "N/A"
+            VALUE "FileDescription",  "Cute Farm"
+            VALUE "FileVersion",      "1.0.0"
+            VALUE "InternalName",     "Game"
+            VALUE "OriginalFilename", "Game.exe"
+            VALUE "ProductName",      "Cute Farm"
+            VALUE "ProductVersion",   "1.0.01"
+            VALUE "LegalCopyright",   "N/A"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 1200, 0x0409
+    END
+END

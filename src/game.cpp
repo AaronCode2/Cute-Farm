@@ -39,7 +39,7 @@ bool Game::titleScreen() {
 
     if(utils::mouseHover(dest)) src.x = src.width;
 
-    if(utils::mouseClicked(dest)) runTitleScreen = true;   
+    if(utils::mouseClicked(dest)) runTitleScreen = true;    
     
     if(!runTitleScreen) {
 

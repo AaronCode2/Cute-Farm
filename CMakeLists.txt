@@ -33,10 +33,25 @@ SOURCE_FILES
 add_executable(Game ${SOURCE_FILES})
 target_link_libraries(Game raylib)
 
+if(WIN32)
+
+    target_sources(Game PRIVATE Assets/Windows/app.rc)
+    target_link_options(Game PRIVATE $<$<CONFIG:Release>:-mwindows>)
+elseif(APPLE)
+
+    target_link_options(Game PRIVATE $<$<CONFIG:Release>:-MACOSX_BUNDLE>)
+endif()
+
+target_compile_definitions(Game PUBLIC $<$<CONFIG:Debug>:DEBUG_ENABLED>)
+
+if("${PLATFORM}" STREQUAL "Web")
+
+    message(FATAL_ERROR "Do not build in this project in the Web as it doesn't work!")
+endif()
+
 if(APPLE)
 
     target_link_libraries(${PROJECT_NAME} "-framework IOKit")
     target_link_libraries(${PROJECT_NAME} "-framework Cocoa")
     target_link_libraries(${PROJECT_NAME} "-framework OpenGL")
-    
 endif()
