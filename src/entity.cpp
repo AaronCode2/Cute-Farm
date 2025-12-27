@@ -42,4 +42,5 @@ Entity::~Entity() {
 #if !__linux__
     UnloadTexture(image);
 #endif
+
 }
