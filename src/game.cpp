@@ -7,11 +7,13 @@ Game::Game() {
     UnloadImage(icon);
 
     tileManger.createTile();
+    main = LoadMusicStream("../Assets/Music/Main.ogg");
     runGame();
 }
 
 void Game::updateGame() {
 
+    PlayMusicStream(main);
     tileManger.drawTilesBeforePlayerDrawn();
     tileManger.drawPlants();
     managePlants();
