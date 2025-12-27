@@ -146,7 +146,9 @@ void GUI::draw() {
         {0, 0}, 0, WHITE
     );
 
-    DrawText(formatZeros(coins, 6).c_str(), 50, 20, 20, BLACK);
+    if(coins >= 99999) coins = 99999;
+
+    DrawText(formatZeros(coins, 5).c_str(), 50, 20, 20, BLACK);
 
     DrawTexturePro(
         images[0],
