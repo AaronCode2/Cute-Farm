@@ -30,7 +30,6 @@ class Game {
         Texture2D playBtn = LoadTexture("../Assets/Objects/Play.png");
         Texture mouse = LoadTexture("../Assets/Player/Mouse.png");
         Image icon = LoadImage("../Assets/Objects/Egg.png");
-        Music main;
 
         Player player = Player({
             
