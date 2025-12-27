@@ -93,19 +93,17 @@ void Game::manageHarvasting(Tile &tile) {
 
     if(utils::harvastingStatus(player, tile, tileSelRect)) {
 
-        for(auto &plant : tileManger.plants) {
+        for(auto it = tileManger.plants.begin(); it < tileManger.plants.end(); it++) {
 
             if(
-                plant.isHarvastable() && 
-                CheckCollisionRecs(plant.destRect, tileSelRect)
+                it->isHarvastable() && 
+                CheckCollisionRecs(it->destRect, tileSelRect)
             ) 
             {
-                if(plant.getType() == Wheat) gui.coins += 56;
+                if(it->getType() == Wheat) gui.coins += 56;
                 else gui.coins += 78;
 
-                // No worries!
-
-                plant.destRect.x = 0xfffff;
+                it = tileManger.plants.erase(it);
             }
         }
     }

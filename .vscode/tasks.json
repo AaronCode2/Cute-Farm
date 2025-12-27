@@ -4,7 +4,7 @@
    {
        "label": "Cmake",
        "type": "shell",
-       "command": "cmake --build build -- -j",
+       "command": "clear; cmake --build build -- -j",
        "group": {
            "kind": "build",
            "isDefault": true

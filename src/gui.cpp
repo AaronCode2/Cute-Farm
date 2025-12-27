@@ -146,7 +146,7 @@ void GUI::draw() {
         {0, 0}, 0, WHITE
     );
 
-    DrawText(formatZeros(coins, 4).c_str(), 50, 20, 20, BLACK);
+    DrawText(formatZeros(coins, 6).c_str(), 50, 20, 20, BLACK);
 
     DrawTexturePro(
         images[0],
