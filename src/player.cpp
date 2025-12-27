@@ -8,8 +8,10 @@ Entity(
 
 Player::~Player() {
 
+#if !__linux__
     UnloadTexture(image);
     UnloadTexture(actionImage);
+#endif
 }
 
 void Player::update() {

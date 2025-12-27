@@ -158,10 +158,13 @@ void TileManger::checkInput(Rectangle & tile) {
 
 void TileManger::destroyTiles() {
 
+#if !__linux__
     UnloadTexture(Plant::image);
 
     for(int i = 0; i < 3; i++) {
 
         UnloadTexture(Tile::image[i]);
     }   
+#endif
+
 }

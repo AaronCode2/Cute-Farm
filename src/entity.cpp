@@ -39,5 +39,7 @@ int Entity::animate(int frameMax, int bufferFrame) {
 
 Entity::~Entity() {
 
+#if !__linux__
     UnloadTexture(image);
+#endif
 }
