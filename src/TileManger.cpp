@@ -142,18 +142,33 @@ void TileManger::drawTilesAfterPlayerDrawn() {
 }
 
 void TileManger::checkInput(Rectangle & tile) {
-    
+
+// Thanks for shlurd04 (https://github.com/shlurd04) for the code snippet :)
+
+    float dirX = 0.0f;
+    float dirY = 0.0f;
+    float speed = 5.0f;
+
+#define TILE_SPEED 1.0f
+
     if(IsKeyDown(KEY_W) || IsKeyDown(KEY_UP)) 
-        tile.y -= -5;
+        dirY += TILE_SPEED;
 
     if(IsKeyDown(KEY_S) || IsKeyDown(KEY_DOWN)) 
-        tile.y -= 5;
+        dirY -= TILE_SPEED;
 
     if(IsKeyDown(KEY_A) || IsKeyDown(KEY_LEFT)) 
-        tile.x -= -5;
+        dirX += TILE_SPEED;
 
     if(IsKeyDown(KEY_D) || IsKeyDown(KEY_RIGHT)) 
-        tile.x -= 5;
+        dirX -= TILE_SPEED;
+
+    if (dirX != 0.0f || dirY != 0.0f) {
+        float length = std::sqrt(dirX * dirX + dirY * dirY);
+        
+        tile.x += (dirX / length) * speed;
+        tile.y += (dirY / length) * speed;
+    }
 }
 
 void TileManger::destroyTiles() {

@@ -6,6 +6,7 @@
 #include <vector>
 #include <thread>
 #include <iostream>
+#include <math.h>
 
 struct TileManger {
 
